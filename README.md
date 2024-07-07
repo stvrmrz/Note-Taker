@@ -23,7 +23,7 @@
 ## About The Project
 Note Taker Demo
 
-![Project Note Taker Demo](public/assets/note-taker.gif)
+![Project Note Taker Demo](note-taker.gif)
 
 This project was about creating a Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file. 
 
