@@ -31,3 +31,17 @@ app.post('/api/notes', (req, res) => {
         });
     });
 });
+
+// Route to delete a note
+app.delete('/api/notes/:id', (req, res) => {
+    const noteId = parseInt(req.params.id);
+    fs.readFile(path.join(__dirname, 'db/db.json'), 'utf8', (err, data) => {
+        if (err) throw err;
+        const notes = JSON.parse(data);
+        const filteredNotes = notes.filter(note => note.id !== noteId);
+        fs.writeFile(path.join(__dirname, 'db/db.json'), JSON.stringify(filteredNotes), (err) => {
+            if (err) throw err;
+            res.json({ message: 'Note deleted' });
+        });
+    });
+});
