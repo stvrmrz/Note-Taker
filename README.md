@@ -55,7 +55,7 @@ reccomended to install Visual Studio code as well.
 <!-- USAGE EXAMPLES -->
 ## Link to Deployed Application
 
-_Here is a link to my [Deployed Weather Dashboard](https://note-taker-nyct.onrender.com/notes)_
+_Here is a link to my [Deployed Note Taker](https://note-taker-nyct.onrender.com/notes)_
 
 <!-- ROADMAP -->
 ## Roadmap
